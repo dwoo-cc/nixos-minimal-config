@@ -13,18 +13,18 @@
 
   users.mutableUsers = false;
 
-  users.users.yourname = myLib.mkUser { # ⚠ 改 yourname（key 也要改）
-    username        = "yourname";       # ⚠ 同上
+  users.users.dwoo = myLib.mkUser { # ⚠ 改 yourname（key 也要改）
+    username        = "dwoo";       # ⚠ 同上
     shell           = pkgs.bash;
-    initialPassword = "changeme";       # ⚠ 首次登录后立即修改
+    hashedPassword = "$y$j9T$OkuoNFPDeO8RYMqNet8Kd.$AN0jTBbSbV7Qwk3mzJZQJ1f7Cih45xR0Koo2g7xtWG3";       # ⚠ 首次登录后立即修改
   };
 
-  users.users.root.hashedPassword = "!";
+  users.users.root.hashedPassword = "$y$j9T$OkuoNFPDeO8RYMqNet8Kd.$AN0jTBbSbV7Qwk3mzJZQJ1f7Cih45xR0Koo2g7xtWG3";
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
     auto-optimise-store   = true;
-    trusted-users         = [ "root" "yourname" ]; # ⚠ 同步修改
+    trusted-users         = [ "root" "dwoo" ]; # ⚠ 同步修改
   };
 
   nix.gc = {

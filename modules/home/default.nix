@@ -10,9 +10,9 @@
     useUserPackages  = true;
     extraSpecialArgs = { inherit inputs myLib; };
 
-    users.yourname = { myLib, ... }: { # ⚠ 改成你的用户名
-      home.username      = "yourname";       # ⚠ 同上
-      home.homeDirectory = "/home/yourname"; # ⚠ 同上
+    users.dwoo = { myLib, ... }: { # ⚠ 改成你的用户名
+      home.username      = "dwoo";       # ⚠ 同上
+      home.homeDirectory = "/home/dwoo"; # ⚠ 同上
 
       # 按名声明所需的 home-manager 子模块
       # 加新模块：在 modules/home/ 下新建文件，在这里加一个名字即可
