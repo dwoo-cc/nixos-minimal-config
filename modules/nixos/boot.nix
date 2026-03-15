@@ -15,11 +15,6 @@
     };
   };
 
-  boot.initrd.luks.devices."cryptroot" = {
-    device = "/dev/disk/by-partlabel/LUKS";
-    allowDiscards = true;
-  };
-
   boot.supportedFilesystems     = [ "btrfs" "vfat" ];
   boot.initrd.supportedFilesystems = [ "btrfs" ];
 

@@ -19,7 +19,7 @@
     inherit withSystem;
 
     hosts = {
-      myhostname = {};  # ⚠ 改成你的主机名（同时改 hosts/ 目录名）
+      onyx = {};  # ⚠ 改成你的主机名（同时改 hosts/ 目录名）
 
       # 新机器示例：
       # laptop = {};

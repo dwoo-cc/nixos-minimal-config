@@ -7,6 +7,7 @@
     hideMounts = true;
 
     directories = [
+       "/var/lib/nixos"
       "/var/lib/systemd/coredump"
       "/var/lib/bluetooth"
       "/var/db/sudo/lectured"

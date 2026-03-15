@@ -5,6 +5,7 @@
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" "usbhid" "sd_mod" ];
-  boot.kernelModules = [ "kvm-intel" ]; # AMD 改为 kvm-amd
+  boot.kernelModules = [ "kvm-amd" ]; # AMD 改为 kvm-amd
+  hardware.cpu.amd.updateMicrocode = true;
   nixpkgs.hostPlatform = "x86_64-linux";
 }

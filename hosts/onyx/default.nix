@@ -27,6 +27,6 @@
     ++ myLib.registry.get.nixos [ "disk" "boot" "system" "impermanence" ]
     ++ [ ../../modules/home/default.nix ];
 
-  networking.hostName = "myhostname"; # ⚠ 改成你的主机名
+  networking.hostName = "onyx"; # ⚠ 改成你的主机名
   system.stateVersion = "25.05";
 }

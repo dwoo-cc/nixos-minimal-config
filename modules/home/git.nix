@@ -1,11 +1,10 @@
-# ── modules/home/git.nix ──────────────────────────────────────────────────────
 { ... }:
 {
   programs.git = {
-    enable = true;
+    enable    = true;
     userName  = "Your Name";        # ⚠ 改
     userEmail = "you@example.com";  # ⚠ 改
-    extraConfig = {
+    settings = {                    # ← extraConfig 改成 settings
       pull.rebase        = true;
       init.defaultBranch = "main";
     };
